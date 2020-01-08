@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import boardShape from '../../../helpers/props/boardShape';
 import './Board.scss';
 
@@ -15,8 +16,7 @@ class Board extends React.Component {
           <div className="card-body">
             <h5 className="card-title">{board.name}</h5>
             <p className="card-text">{board.description}</p>
-            <button className="btn btn-primary" onClick={this.setSelectedBoardId}>View Pins</button>
-            <button className="btn btn-danger" onClick={this.setEditMode}>Edit Board</button>
+            <Link className="btn btn-primary" to={`/board/${board.id}`}>View Board</Link>
           </div>
         </div>
       </div>
