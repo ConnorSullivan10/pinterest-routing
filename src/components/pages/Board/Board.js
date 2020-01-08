@@ -1,8 +1,12 @@
 import React from 'react';
-
+import boardShape from '../../../helpers/props/boardShape';
 import './Board.scss';
 
 class Board extends React.Component {
+  static propTypes = {
+    board: boardShape.boardShape,
+  }
+
   render() {
     const { board } = this.props;
     return (
