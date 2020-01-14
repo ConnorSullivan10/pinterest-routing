@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Board from '../Board/Board';
+import Board from '../../shared/Board/Board';
 
 import authData from '../../../helpers/data/authData';
 import boardData from '../../../helpers/data/boardData';
